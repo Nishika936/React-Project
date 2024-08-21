@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        width: 100%;
+        height: 100%;
+        min-height: 1150px;
+        background-color: #8BC6EC;
+        background-image: linear-gradient(135deg,#8BC6EC 0%, #9599E2 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    .card{
+        width: 360px;
+        height: 600px;
+        background-color: white;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    .card img{
+        width: 100%;
+        height: 30%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .textBox{
+        display: flex;
+        gap: 20px;
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    #amountBox{
+        width: 80%;
+        height: 10%;
+        background-color: rgb(140, 140, 201);
+         border-radius: 10px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-right: 20px;
+         padding-left: 20px;
+    }
+    #leftBox{
+        /* width: fit-content; */
+        height: 100%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+    }
+    .imgBox img{
+        height: 3rem;
+        width: 3rem;
+    }
+    .rightBox{
+
+    }
+    #paymentButton{
+        width: 80%;
+        height: 9%;
+        background-color: rgb(113, 71, 209);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    }
+    .cancelBox a{
+        text-decoration: none;
+        color: rgb(8, 7, 7);
+        font-weight: bold;
+        font-size: large;
+
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img
+            src="card2.webp"
+            />
+            <div class="textBox">
+            <h2>Order Summary</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quis ipsa praesentium minus reprehenderit quod ducimus molestias quam totam fugit aut.</p>
+        </div>
+        <div id="amountBox">
+            <div id="leftBox">
+            <img 
+            src="music picture.webp"
+            />
+            </div>
+            <div id="textAmountBox">
+                <p>Amount</p>
+                <p>$99.9/year</p>
+            </div>
+            <div class="rightBox">
+               <a href="#">Change</a> 
+            </div>
+        </div>
+    
+    <button id="paymentButton">
+        Proceed to payment
+
+    </button>
+    <div class="cancelBox">
+        <a href="#">Cancel order</a>
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>
